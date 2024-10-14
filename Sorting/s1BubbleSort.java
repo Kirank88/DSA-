@@ -5,7 +5,6 @@ public class s1BubbleSort {
     public static void bubbleSort(int arr[]) {
         int swap = 0;
         for(int turn = 0; turn < arr.length-1; turn++ ) {
-            
             for(int j = 0; j < arr.length - 1 - turn; j++) {
                 if(arr[j] > arr[j + 1]) {
                     //swap
@@ -16,7 +15,7 @@ public class s1BubbleSort {
                 }
             }
         }
-        System.err.println("swap :" + swap);
+        System.out.println("swap :" + swap);
     }
 
     public static void printarr(int arr[]) {
