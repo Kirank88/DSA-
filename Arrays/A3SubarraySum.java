@@ -15,7 +15,7 @@ public class A3SubarraySum {
 
         for(int i = 0; i < num.length; i++) {
             int start = i;
-            int sum;
+            //int sum;
             for(int j = i; j < num.length; j++) {
                 int end = j;
                 curSum =start == 0 ? prefix[end] : prefix[end] - prefix[start - 1];
