@@ -23,3 +23,50 @@ public class A1Pairs {
 }
 
 //Total number of pairs = n(n-1) / 2;
+
+//LONGEST SUBRAY OF SUM K
+
+// class Solution {
+//     public int lenOfLongestSubarr(int[] arr, int k) {
+//         // code here
+      
+//         //Method 1
+//         // int len = 0;
+//         // int n = arr.length;
+        
+//         // for(int i = 0; i < n; i++) {
+//         //     long sum = 0;
+//         //     for(int j = i; j < n; j++) {
+//         //         sum += arr[j];
+                
+//         //         if(sum == k)
+//         //             len = Math.max(len, j - i + 1);
+//         //     }
+//         // }
+//         // return len;
+        
+//         //Method 2
+        
+//         int left = 0, right = 0;
+//         long sum = arr[0];
+//         int len = 0;
+//         int n = arr.length;
+        
+//         while(right < n) {
+//             while(left <= right && sum > k) {
+//                 sum -= arr[left];
+//                 left++;
+//             }
+            
+//             if(sum == k) {
+//                 len = Math.max(len, right - left + 1);
+//             }
+//             right++;
+//             if(right < n) {
+//                 sum += arr[right];
+//             }
+//         }
+//         return len;
+        
+//     }
+// }
